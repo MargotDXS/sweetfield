@@ -1,0 +1,25 @@
+import React from "react";
+import './Cfooter.css';
+
+class Cfooter extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+    render(){
+        return(
+            <footer>
+                <main>
+                    <figure>logo</figure>
+                    <div>contact</div>
+                    <a>instagram</a>
+                </main>
+                <hr/>
+                <p className="copyright">
+                    ©Sweetfield - 2023 
+                </p>
+            </footer>
+        )
+    }
+}
+
+export default Cfooter

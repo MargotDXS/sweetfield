@@ -1,0 +1,18 @@
+footer {
+    background-color: var(--black);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+hr {
+    margin: 0 5rem;
+}
