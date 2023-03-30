@@ -8,7 +8,15 @@ class Cheader extends React.Component {
     render() {
         return(
             <header>
-            <div>hello</div>
+                <nav>
+                    <figure>logo</figure>
+                    <ul>
+                        <li>menu 1</li>
+                        <li>menu 2</li>
+                        <li>menu 3</li>
+                    </ul>
+                </nav>
+                <hr/>
             </header>
         )
     }

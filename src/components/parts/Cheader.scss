@@ -1,5 +1,27 @@
 header {
-    div {
-        background-color: aquamarine;
+    nav {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        ul {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
     }
+    hr {     
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
 }
