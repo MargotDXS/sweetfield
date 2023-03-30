@@ -1,10 +1,13 @@
 header {
+    position: sticky;
+    top: 0;
     nav {
         width: 90%;
         margin: auto;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 0;
+        align-items: center;
+        height: 10vh;
         ul {
             width: 40%;
             display: flex;
@@ -29,12 +32,20 @@ header {
     header {
         nav {
             ul {
-                width: 100vw;
-                height: 100vh;
-                background-color: antiquewhite;
                 display: none;
                 &.active {
                     display: flex;
+                    flex-direction: column;
+                    position: fixed;
+                    top: 10vh;
+                    right: 0;
+                    width: 40vw;
+                    background-color: antiquewhite;
+                }
+                li {
+                    text-align: end;
+                    padding: 1rem 3rem;
+                    margin: 1rem 0;
                 }
             }
             button {
