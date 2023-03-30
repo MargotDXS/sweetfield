@@ -1,5 +1,5 @@
 import React from "react";
-import './Cfooter.css';
+import './Cfooter.scss';
 
 class Cfooter extends React.Component {
     constructor(props) {
