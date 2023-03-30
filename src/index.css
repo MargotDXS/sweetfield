@@ -5,3 +5,10 @@
 	box-sizing: border-box;
 }
 
+/*   color variables   */
+:root {
+	--black: #3a3a3a;
+	--white: #fafafa;
+	--main-color: #006362;
+	--secondary-color: #ffc745;
+}
