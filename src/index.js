@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 
 import Cheader from './components/parts/Cheader';
 import Cfooter from './components/parts/Cfooter';

@@ -21,9 +21,9 @@ class Cheader extends React.Component {
                 <nav>
                     <figure>logo</figure>
                     <ul className={this.state.isMenuOpen ? 'active' : ''}>
-                        <li>menu 1</li>
-                        <li>menu 2</li>
-                        <li>menu 3</li>
+                        <li className="black">menu 1</li>
+                        <li className="black">menu 2</li>
+                        <li className="black">menu 3</li>
                     </ul>
                     <button className="burgerMenu" onClick={this.toggleMenu}> burger </button>
                 </nav>

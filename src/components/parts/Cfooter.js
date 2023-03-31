@@ -14,7 +14,7 @@ class Cfooter extends React.Component {
                     <a>instagram</a>
                 </main>
                 <hr/>
-                <p className="copyright">
+                <p className="little copyright">
                     ©Sweetfield - 2023 
                 </p>
             </footer>
