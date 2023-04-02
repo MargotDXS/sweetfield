@@ -3,9 +3,58 @@ footer {
     main {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         padding: 3rem 0;
+        svg {
+            fill: var(--white);
+            height: 10vh;
+            width: auto;
+        }
+        .contact {
+            text-align: center;
+            a {
+                display: inline-block;
+                margin-top: 1vh;
+                position: relative;
+                z-index: 5;
+            }
+            a::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                background-color: var(--secondary-color);
+                height: 1px;
+                width: 100%;
+                transition: 0.2s ease-out;
+                z-index: -1;
+            }
+            a:hover::after {
+                height: 0.8rem;
+                transform: skewX(-15deg);
+            }
+        }
+        .instaLink {
+            display: block;
+            position: relative;
+            z-index: 5;
+        }
+        .instaLink::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            background-color: var(--secondary-color);
+            height: 1px;
+            width: 100%;
+            transition: 0.2s ease-out;
+            z-index: -1;
+        }
+        .instaLink:hover::after {
+            height: 0.8rem;
+            transform: skewX(-15deg);
+        }
     }
-    
     .copyright {
         text-align: center;
         padding: 1rem 0;
@@ -22,6 +71,9 @@ footer {
         main {
             flex-direction: column;
             align-items: center;
+            .contact {
+                margin: 5vh auto;
+            }
         }
     }
 }
