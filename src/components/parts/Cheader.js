@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import './Cheader.scss';
 
 class Cheader extends React.Component {
@@ -21,9 +22,15 @@ class Cheader extends React.Component {
                 <nav>
                     <figure>logo</figure>
                     <ul className={this.state.isMenuOpen ? 'active' : ''}>
-                        <li className="black">menu 1</li>
-                        <li className="black">menu 2</li>
-                        <li className="black">menu 3</li>
+                        <li>
+                            <Link className="navLink" to="/">Accueil</Link>
+                        </li>
+                        <li>
+                            <Link className="navLink" to="/caseStudies">Case studies</Link>
+                        </li>
+                        <li>
+                            <Link className="navLink" to="/contact">Contact</Link>
+                        </li>
                     </ul>
                     <button className="burgerMenu" onClick={this.toggleMenu}> burger </button>
                 </nav>
