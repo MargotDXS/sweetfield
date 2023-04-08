@@ -90,6 +90,14 @@ a {
 	color: var(--white);
 }
 
+
+// grid template
+.gridContainer {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	padding: 0 5%;
+}
+
 /*    breakpoints  
 1024: tablet
 768: mobile
