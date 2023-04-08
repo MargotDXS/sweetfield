@@ -1,6 +1,10 @@
 header {
     position: sticky;
     top: 0;
+    svg {
+        height: 5vh;
+        fill: var(--white);
+    }
     nav {
         width: 90%;
         margin: auto;
