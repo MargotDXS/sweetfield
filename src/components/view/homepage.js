@@ -1,4 +1,5 @@
 import React from "react";
+import Cfooter from "../parts/Cfooter";
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -6,7 +7,10 @@ class Homepage extends React.Component {
     }
     render() {
         return (
+            <>
             <div>Homepage</div>
+            <Cfooter />
+            </>
         )
     }
 }

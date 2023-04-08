@@ -1,4 +1,5 @@
 import React from "react";
+import Cbackground from "../atoms/background";
 
 class Contact extends React.Component {
     constructor(props) {
@@ -6,7 +7,10 @@ class Contact extends React.Component {
     }
     render() {
         return(
-            <div>contact</div>
+            <main className="contact">
+                <Cbackground />
+                <a href="mailto:margot@douxchamps.ch">margot@douxchamps.ch</a>
+            </main>
         )
     }
 }
