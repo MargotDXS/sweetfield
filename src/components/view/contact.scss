@@ -1,0 +1,33 @@
+.contactPage {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    h1 {
+        font-size: clamp(1.25rem, 0.8818rem + 2.1818vw, 3.5rem); /* vp: 270 - 1920 / ft-size: 20 - 56 */
+    }
+    h4 {
+        padding-top: 5vh;
+    }
+    h1, h4 {
+        position: relative;
+    }
+    h1::after, h4::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--secondary-color);
+        height: 1px;
+        width: 100%;
+        transition: 0.2s ease-out;
+        z-index: -1;
+    }
+    h1:hover::after, h4:hover::after {
+        height: 0.8rem;
+        transform: skewX(-15deg);
+    }
+
+}
