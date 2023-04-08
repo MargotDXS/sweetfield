@@ -1,0 +1,10 @@
+.heroHeader {
+    grid-column: 1 / span 12;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+        margin-top: 5vh;
+    }
+}
