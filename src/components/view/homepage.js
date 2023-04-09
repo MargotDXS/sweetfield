@@ -5,6 +5,8 @@ import './homepage.scss';
 import Cbackground from "../atoms/background";
 import HeroHeader from "../moleculs/HeroHeader";
 
+import Cbutton from "../atoms/Cbutton";
+
 class Homepage extends React.Component {
     constructor(props) {
         super(props);
@@ -16,6 +18,8 @@ class Homepage extends React.Component {
                     <Cbackground />
                     <HeroHeader />
                 </main>
+                <Cbutton destinationPage="/contact" value="Je veux voir plus de projets" />
+                <Cbutton destinationPage="/contact" value="Je veux discuter avec toi" btnType="primary"/>
                 <Cfooter />
             </>
         )

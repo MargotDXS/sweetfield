@@ -1,0 +1,16 @@
+.btn {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    font-size: clamp(1.125rem, 1.0227rem + 0.6061vw, 1.75rem); /* vp: 270 - 1920 / ft-size: 18 - 28 */
+    &.primaryBtn {
+        background-color: var(--main-color);
+        border: 1px transparent;
+    }
+    &.secondaryBtn {
+        background-color: var(--white);
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+    }
+    
+}
