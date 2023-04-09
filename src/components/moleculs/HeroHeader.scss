@@ -12,7 +12,7 @@
         margin-top: 8vh;
         opacity: 0;
         animation: fadeInText 1s ease-out;
-        animation-delay: 0.7s;
+        animation-delay: 0.6s;
         animation-fill-mode: forwards;
     }
     .heroHeaderFrame {
@@ -42,7 +42,7 @@
 }
 @keyframes fadeInText {
     from {
-        transform: translateY(7%);
+        transform: translateY(10%);
         opacity: 0;
     }
     to {
