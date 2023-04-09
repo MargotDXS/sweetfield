@@ -15,7 +15,7 @@ class HeroHeader extends React.Component {
                 <div className="heroHeaderFrame">
                     <h1>Je suis <span className="emph">créative multidisciplinaire</span></h1>
                 </div>
-                <h4>J'ai 21 ans et suis basée en Suisse mais travail volontiers pour des projets à l'étranger. Ouvertures d'esprit et curiosité sont mes principales valeurs.</h4>
+                <h4>J'ai 21 ans et suis basée en Suisse mais travaille volontiers pour des projets à l'étranger. Ouvertures d'esprit et curiosité sont mes principales valeurs.</h4>
             </section>
         )
     }
