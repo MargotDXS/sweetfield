@@ -98,6 +98,16 @@ a {
 	padding: 0 5%;
 }
 
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .gridContainer {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
 /*    breakpoints  
 1024: tablet
 768: mobile
