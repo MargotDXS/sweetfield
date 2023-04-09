@@ -1,17 +1,18 @@
 header {
     position: sticky;
     top: 0;
+    height: 10vh;
     svg {
         height: 5vh;
         fill: var(--white);
     }
     nav {
         width: 90%;
+        height: 100%;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 10vh;
         ul {
             width: 60%;
             display: flex;

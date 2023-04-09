@@ -9,7 +9,10 @@ class Contact extends React.Component {
     render() {
         return(
             <main className="contactPage">
-                <Cbackground />
+                <div className="bg">
+                    <div className="grainyBg"></div>
+                </div>
+                
                 <a href="mailto:margot@douxchamps.ch">
                     <h1>margot@douxchamps.ch</h1>
                 </a>

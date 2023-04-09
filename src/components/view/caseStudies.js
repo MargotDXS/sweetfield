@@ -1,5 +1,6 @@
 import React from "react";
 import Cfooter from "../parts/Cfooter";
+import './caseStudies.scss';
 
 class CaseStudies extends React.Component {
     constructor(props) {
@@ -8,7 +9,9 @@ class CaseStudies extends React.Component {
     render() {
         return(
             <>
-            <div>case Studies</div>
+            <div className="bg">
+                <div className="grainyBg whiteBlended"></div>
+            </div>
             <Cfooter />
             </>
         )

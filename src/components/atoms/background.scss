@@ -23,7 +23,7 @@
         height: 100%;
         &.whiteBlended {
             background: url(../../images/grain.png),
-                        linear-gradient(180deg, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
+                        linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%);
             background-blend-mode: screen;
         }
     }

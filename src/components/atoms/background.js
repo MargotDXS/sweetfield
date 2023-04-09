@@ -9,7 +9,7 @@ class Cbackground extends React.Component {
         return (
             <>
                 <div className="bg">
-                    <div className="grainyBg"></div>
+                    <div className="grainyBg whiteBlended"></div>
                 </div>
                 
             </>
