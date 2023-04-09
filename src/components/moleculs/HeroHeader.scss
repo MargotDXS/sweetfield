@@ -17,7 +17,6 @@
         text-align: justify;
     }
     .heroHeaderFrame {
-        overflow-y: hidden;
         &.heroHeaderFrame:first-child h1 {
             animation: fadeInTitle 0.7s ease-out;
             animation-fill-mode: forwards;
