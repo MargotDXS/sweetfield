@@ -1,10 +1,52 @@
 .heroHeader {
     grid-column: 1 / span 12;
     height: 90vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h1 {
+        opacity: 0;
+    }
     h4 {
-        margin-top: 5vh;
+        margin-top: 8vh;
+        opacity: 0;
+        animation: fadeInText 1s ease-out;
+        animation-delay: 0.7s;
+        animation-fill-mode: forwards;
+    }
+    .heroHeaderFrame {
+        overflow-y: hidden;
+        &.heroHeaderFrame:first-child h1 {
+            animation: fadeInTitle 0.7s ease-out;
+            animation-fill-mode: forwards;
+        }
+        &.heroHeaderFrame:nth-of-type(2) h1{
+            animation: fadeInTitle 0.7s ease-out;
+            animation-delay: 0.3s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes fadeInTitle {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInText {
+    from {
+        transform: translateY(7%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
