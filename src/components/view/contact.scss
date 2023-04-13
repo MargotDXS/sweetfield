@@ -7,9 +7,14 @@
     overflow-y: hidden;
     h1 {
         font-size: clamp(1.25rem, 0.8818rem + 2.1818vw, 3.5rem); /* vp: 270 - 1920 / ft-size: 20 - 56 */
+        animation: fadeInContact 0.4s ease-out; 
     }
     h4 {
         padding-top: 5vh;
+        opacity: 0;
+        animation: fadeInContact 0.4s ease-out; 
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
     }
     h1, h4 {
         position: relative;
@@ -21,13 +26,23 @@
         bottom: 0;
         background-color: var(--secondary-color);
         height: 1px;
-        width: 100%;
+        width: 0%;
         transition: 0.2s ease-out;
         z-index: -1;
     }
     h1:hover::after, h4:hover::after {
         height: 0.8rem;
         transform: skewX(-15deg);
+    }
+    h1::after {
+        animation: underlineAnimation 0.3s ease-out;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+    }
+    h4::after {
+        animation: underlineAnimation 0.3s ease-out;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
     }
 
     /*   Backgound   */
@@ -51,5 +66,25 @@
             height: 100%;
         }
     }
+}
 
+@keyframes fadeInContact {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes underlineAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
