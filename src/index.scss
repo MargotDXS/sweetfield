@@ -90,6 +90,10 @@ a {
 	color: var(--white);
 }
 
+// selection
+::selection {
+	background-color: rgba(0, 99, 98, 0.5);
+}
 
 // grid template
 .gridContainer {
