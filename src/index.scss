@@ -17,6 +17,9 @@
 * {
 	color: var(--white);
 }
+body {
+	overflow-x: hidden;
+}
 h1 {
 	font-family: 'broadacre-regular-0', sans-serif;
 	font-weight: 300;
