@@ -1,6 +1,11 @@
 .caseStudies {
     .presentation {
+        margin: 10vh 0;
         grid-column: 1 / span 6 ;
+    }
+    a {
+        grid-column: 1 / span 16;
+        margin: 10vh auto 0 auto;
     }
 }
 
@@ -25,7 +30,7 @@
         height: 100%;
         &.whiteBlended {
             background: url(../../images/grain.png),
-                        linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%);
+                        linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255,1) 100%);
             background-blend-mode: screen;
         }
     }
