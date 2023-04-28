@@ -26,7 +26,8 @@ header {
     hr {     
         width: 90%;
         margin: auto;
-        border: solid 0.5px var(--white);
+        border-top: solid 0.5px var(--white);
+        border-bottom: none;
     }
 }
 

@@ -1,5 +1,5 @@
 .heroHeader {
-    grid-column: 1 / span 12;
+    grid-column: 1 / span 10;
     height: 90vh;
     padding-bottom: 10vh;
     display: flex;
@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 1024px) {
     .heroHeader {
-        grid-column: 1 / span 4 ;
+        grid-column: 1 / span 14 ;
     }
 }
 
