@@ -4,11 +4,21 @@ import './caseStudies.scss';
 import CaseStudiesLine from "../moleculs/caseStudiesLine";
 import CsTitle from "../moleculs/csTitle";
 import Cbutton from "../atoms/Cbutton";
+import { gsap, Timeline } from "gsap"
 
 class CaseStudies extends React.Component {
     constructor(props) {
         super(props)
     }
+    componentDidMount() {
+        const title = document.querySelector(".csTitle");
+        const caseStudiesLines = document.querySelectorAll(".csPresentation");
+        const contactBtn = document.querySelector(".btn")
+        let tl = gsap.timeline()
+            tl.fromTo(title, { opacity: 0, transform:'translateY(20%)'}, { opacity: 1, duration: 0.2, delay: 0.3, transform:'translateY(0%)'});
+            tl.fromTo(caseStudiesLines, { opacity: 0, transform:'translateY(20%)'}, { opacity: 1, duration: 0.3, stagger: 0.2, transform:'translateY(0%)'});
+            tl.fromTo(contactBtn, {opacity: 0, transform:'translateY(5%)'}, { opacity: 1, duration: 0.3, delay: 0, transform:'translateY(0%)'})
+      }
     render() {
         return(
             <>
