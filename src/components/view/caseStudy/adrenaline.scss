@@ -1,21 +1,29 @@
 .adrenaline {
-    .closeSection {
-        grid-column: 1 / span 8;
-        display: flex;
-        align-items: center;
-        position: sticky;
-        top: 10vh;
+    img {
+        grid-column: 1/ span 10;
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
     }
-    .infoSection {
-        grid-column: 9 / span 8;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        position: sticky;
-        top: 10vh;
+    p.black {
+        grid-column: 10 / span 6;
+        padding: 2vh;
+        position: relative;
+        top: -150%;
+        backdrop-filter: blur(10px);
     }
-    .test {
-        height: 200vh;
+    p.black:before {
+        content: "";
+        position: absolute;
+        background-color: rgba(250, 250, 250, 0.7);
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: inset 0 0 2000px rgba(250, 250, 250, .5);
+        filter: blur(10px);
+        margin: -30px;
     }
 }
 
