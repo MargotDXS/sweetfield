@@ -25,9 +25,9 @@ class CaseStudies extends React.Component {
             <main className="gridContainer caseStudies">
                 <h4 className="presentation">Voilà une liste de quelques projets que j'ai réalisé. Ce n'est pas une liste exhaustive mais elle te donnera une idée de ce que je peux faire.</h4>
                 <CsTitle />
-                <CaseStudiesLine projectName="Adrenaline" projectService="Graphisme" projectYear="2022" />
-                <CaseStudiesLine projectName="A l'écoute de l'intime" projectService="Graphisme" projectYear="2022 - xx" />
-                <CaseStudiesLine projectName="Swiss Tchoukball" projectService="Photographie" projectYear="2021 - xx" />
+                <CaseStudiesLine projectName="Adrenaline" projectService="Graphisme" projectYear="2022" destinationPage="/caseStudies/adrenaline" />
+                <CaseStudiesLine projectName="A l'écoute de l'intime" projectService="Graphisme" projectYear="2022 - xx" destinationPage="" />
+                <CaseStudiesLine projectName="Swiss Tchoukball" projectService="Photographie" projectYear="2021 - xx" destinationPage="" />
                 <Cbutton btnType="primary" value="Je veux discuter avec toi" destinationPage="/contact"/>
             </main>
             <div className="bg">
