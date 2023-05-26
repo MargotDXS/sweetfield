@@ -4,7 +4,7 @@ import './caseStudies.scss';
 import CaseStudiesLine from "../moleculs/caseStudiesLine";
 import CsTitle from "../moleculs/csTitle";
 import Cbutton from "../atoms/Cbutton";
-import { gsap, Timeline } from "gsap"
+import { gsap } from "gsap"
 
 class CaseStudies extends React.Component {
     constructor(props) {
