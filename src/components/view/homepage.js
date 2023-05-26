@@ -20,7 +20,7 @@ class Homepage extends React.Component {
                     <HeroHeader />
                     <Service serviceTitle="Graphisme" serviceDescription="Lorem ipsum just for testign stuff... and some more lorem ipsum always for testing stuff" url="http://via.placeholder.com/300x360"/>
                 </main>
-                <Cbutton destinationPage="/contact" value="Je veux voir plus de projets" />
+                <Cbutton destinationPage="/caseStudies" value="Je veux voir plus de projets" />
                 <Cbutton destinationPage="/contact" value="Je veux discuter avec toi" btnType="primary"/>
                 <Cfooter />
             </>
