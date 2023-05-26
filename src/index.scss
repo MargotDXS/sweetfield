@@ -20,6 +20,9 @@
 body {
 	overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+	display: none;
+} 
 h1 {
 	font-family: 'broadacre-regular-0', sans-serif;
 	font-weight: 300;
