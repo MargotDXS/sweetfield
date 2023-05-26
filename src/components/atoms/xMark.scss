@@ -1,7 +1,5 @@
 .xMark {
     fill: var(--white);
-    height: 3vh;
+    height: clamp(0.875rem, 0.7932rem + 0.4848vw, 1.375rem); //same as paragraph font-size
     margin: 2vh 2vh 2vh 0;
-    position: sticky;
-    top: 0;
 }
