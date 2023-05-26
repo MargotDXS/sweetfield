@@ -1,8 +1,7 @@
 import React from "react";
 import './adrenaline.scss';
-import Xmark from "../../atoms/xMark";
-import { Link } from "react-router-dom";
 import Cfooter from "../../parts/Cfooter";
+import SubmenuCaseStudy from "../../moleculs/submenuCaseStudy";
 
 class Adrenaline extends React.Component {
     constructor(props) {
@@ -12,20 +11,14 @@ class Adrenaline extends React.Component {
         return(
             <>
             <main className="gridContainer adrenaline">
-                <Link to="/caseStudies" className="closeSection">
-                    <Xmark />
-                    <p>Fermer le projet</p>
-                </Link>
-                <section className="infoSection">
-                    <p>Adrenaline | Graphisme | 2022</p>
-                </section>
-                <section className="test"></section>
+                <SubmenuCaseStudy info="Adrenaline | Graphisme | 2022"/>
+                <img src="https://picsum.photos/900/800" />
+                <p className="black">Dans le cadre d'un projet scolaire, il m'a été demandé de créer un logo et d'autres supports de communication pour une marque nommée Adrenaline active dans le domaine des sports de glisse été comme hiver.</p>
             </main>
 
             <div className="bg">
                 <div className="grainyBg whiteBlended"></div>
             </div>
-
             <Cfooter />
             </>
         )

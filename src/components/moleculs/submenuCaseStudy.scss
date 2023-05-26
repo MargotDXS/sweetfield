@@ -1,0 +1,19 @@
+.submenu {
+    grid-column: 1 / span 16;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    position: sticky;
+    top: 10vh;
+    .closeSection {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .infoSection {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
