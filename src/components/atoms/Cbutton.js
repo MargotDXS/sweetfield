@@ -10,7 +10,7 @@ class Cbutton extends React.Component {
     render() {
         const {btnType} = this.props;
         return(
-            <Link to={this.props.destinationPage}>
+            <Link to={this.props.destinationPage} className="btnLink">
                 <button className={`btn ${btnType === 'primary' ? 'primaryBtn' : 'secondaryBtn'}`}><h4>{this.props.value}</h4></button>
             </Link>
         )
