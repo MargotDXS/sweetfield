@@ -7,6 +7,27 @@ class SubmenuCaseStudy extends React.Component {
     constructor(props) {
         super(props)
     };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    
+      handleScroll = () => {
+        const submenu = document.querySelector('.submenu');
+        const subMenuInfo = document.querySelectorAll('.submenu p')
+        if (window.scrollY > 150) {
+          submenu.classList.add('submenuScroll');
+          subMenuInfo.forEach(el => el.classList.add('black'))
+        } else {
+          submenu.classList.remove('submenuScroll');
+          subMenuInfo.forEach(el => el.classList.remove('black'))
+        }
+      };
+
     render() {
         return(
             <section className="submenu">
