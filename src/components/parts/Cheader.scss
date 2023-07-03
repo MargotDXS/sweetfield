@@ -2,6 +2,8 @@ header {
     position: sticky;
     top: 0;
     height: 10vh;
+    z-index: 100;
+    transition: 0.4s ease-out;
     svg {
         height: 5vh;
         fill: var(--white);
@@ -28,6 +30,16 @@ header {
         margin: auto;
         border-top: solid 0.5px var(--white);
         border-bottom: none;
+        transition: 0.4s ease-out;
+    }
+    &.headerScroll {
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        backdrop-filter: blur(10px);
+        transition: 0.4s ease-out;
+        hr {
+            display: none;
+            transition: 0.4s ease-out;
+        }
     }
 }
 

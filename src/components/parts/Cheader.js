@@ -20,10 +20,10 @@ class Cheader extends React.Component {
     
       handleScroll = () => {
         const menu = document.querySelector('header');
-        if (window.scrollY > 100) {
-          menu.style.backgroundColor = 'black';
+        if (window.scrollY > 150) {
+          menu.classList.add('headerScroll');
         } else {
-          menu.style.backgroundColor = 'transparent';
+          menu.classList.remove('headerScroll');
         }
       };
 
