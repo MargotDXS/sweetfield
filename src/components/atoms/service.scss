@@ -1,5 +1,11 @@
 .service {
     grid-column: 1 / span 16;
     display: flex;
-    
+    justify-content: space-between;
+    img {
+        height: 75vh;
+        width: 37.5%;
+        object-fit: cover;
+        margin-left: 6.25%;
+    }
 }

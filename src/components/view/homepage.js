@@ -18,10 +18,12 @@ class Homepage extends React.Component {
                 <main className="gridContainer homepage">
                     <Cbackground />
                     <HeroHeader />
-                    <Service serviceTitle="Graphisme" serviceDescription="Lorem ipsum just for testign stuff... and some more lorem ipsum always for testing stuff" url="http://via.placeholder.com/300x360"/>
+                    <Service serviceTitle="Graphisme" serviceDescription="Lorem ipsum just for testign stuff... and some more lorem ipsum always for testing stuff" url="https://picsum.photos/900/800"/>
+                    <section className="buttons">
+                        <Cbutton destinationPage="/contact" value="Je veux discuter avec toi" btnType="primary"/>
+                        <Cbutton destinationPage="/caseStudies" value="Je veux voir plus de projets" />
+                    </section>
                 </main>
-                <Cbutton destinationPage="/caseStudies" value="Je veux voir plus de projets" />
-                <Cbutton destinationPage="/contact" value="Je veux discuter avec toi" btnType="primary"/>
                 <Cfooter />
             </>
         )

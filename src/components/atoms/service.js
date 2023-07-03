@@ -9,8 +9,8 @@ class Service extends React.Component {
         return (
             <section className="service">
                 <div>
-                    <h2>{this.props.serviceTitle}</h2>
-                    <p>{this.props.serviceDescription}</p>
+                    <h2 className="black">{this.props.serviceTitle}</h2>
+                    <p className="black">{this.props.serviceDescription}</p>
                 </div>
                 <img src={this.props.url} alt={this.props.alt} ></img>
             </section>
