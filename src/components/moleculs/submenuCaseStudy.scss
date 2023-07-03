@@ -7,6 +7,7 @@
     position: sticky;
     top: 10vh;
     z-index: 100;
+    transition: 0.4s ease-out;
     .closeSection {
         padding-left: 5%;
         display: flex;
