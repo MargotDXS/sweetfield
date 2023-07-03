@@ -10,6 +10,23 @@ class Cheader extends React.Component {
         }
     }
 
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    
+      handleScroll = () => {
+        const menu = document.querySelector('header');
+        if (window.scrollY > 100) {
+          menu.style.backgroundColor = 'black';
+        } else {
+          menu.style.backgroundColor = 'transparent';
+        }
+      };
+
     toggleMenu = () => {
         this.setState({
           isMenuOpen: !this.state.isMenuOpen
