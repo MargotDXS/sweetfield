@@ -12,6 +12,9 @@ class Homepage extends React.Component {
     constructor(props) {
         super(props);
     }
+    componentDidMount() {
+        window.scrollTo({ top: 0, left: 0 });
+    }
     render() {
         return (
             <>

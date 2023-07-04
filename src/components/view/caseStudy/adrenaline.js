@@ -11,10 +11,11 @@ class Adrenaline extends React.Component {
     }
 
     componentDidMount() {
+        window.scrollTo({ top: 0, left: 0 });
         this.splitScroll();
-      }
+    }
     
-      splitScroll() {
+    splitScroll() {
         const controller = new ScrollMagic.Controller();
     
         new ScrollMagic.Scene({
@@ -24,7 +25,7 @@ class Adrenaline extends React.Component {
         })
         .setPin('.specifications')
         .addTo(controller);
-      }
+    }
 
     render() {
         return(

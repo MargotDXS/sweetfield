@@ -11,6 +11,7 @@ class CaseStudies extends React.Component {
         super(props)
     }
     componentDidMount() {
+        window.scrollTo({ top: 0, left: 0 });
         const title = document.querySelector(".csTitle");
         const caseStudiesLines = document.querySelectorAll(".csPresentation");
         const contactBtn = document.querySelector(".btn")

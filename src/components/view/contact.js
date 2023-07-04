@@ -6,6 +6,9 @@ class Contact extends React.Component {
     constructor(props) {
         super(props)
     }
+    componentDidMount() {
+        window.scrollTo({ top: 0, left: 0 });
+    }
     render() {
         return(
             <main className="contactPage">
