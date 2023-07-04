@@ -19,7 +19,7 @@ class SwissTchoukball extends React.Component {
         const controller = new ScrollMagic.Controller();
     
         new ScrollMagic.Scene({
-          duration: '100%',
+          duration: '250%',
           triggerElement: '.specifications',
           triggerHook: 0.4,
         })
@@ -34,14 +34,16 @@ class SwissTchoukball extends React.Component {
                 <SubmenuCaseStudy info="Swiss Tchoukball | Photographie | 2021 - xx"/>
                 <section className="gridContainer">
                     <section className="mandat">
-                        <img src="https://picsum.photos/900/800" />
-                        <p className="black description">Dans le cadre d'un projet scolaire, il m'a été demandé de créer un logo et d'autres supports de communication pour une marque nommée Adrenaline active dans le domaine des sports de glisse été comme hiver.</p>
+                        <img src="../imagesCaseStudy/swissTchoukball/main.png" />
+                        <p className="black description">J'ai l'occasion depuis 2021 de faire des photos pour la fédération suisse de tchoukball ainsi que d'autres organisations de tchoukball en Suisse.</p>
                     </section>
                     <section className="cahierCharge">
-                        <p className="black specifications">Je devais réaliser un logo, un design de voile de planche à voile, d'un snow ainsi qu'une affiche pour l'annonce d'un concert au pieds des pistes. La voile et le snow ne devait pas nécessairement respecter l'identité graphique de la marque mais il fallait par contre prendre en compte les spécificités techniques de ses sports.</p>
+                        <p className="black specifications">Depuis décembre 2021, je vais régulièrement faire des photos lors d'évènements de tchoukball en Suisse. Mon rôle est de faire des photos d'ambiance, de jeux, etc. J'ai par exemple pu faire des photos lors des swiss Final Four, des tchoukball Geneva Indoor et du championnat féminin.</p>
                         <div className="scrollWrapper">
-                            <img className="img2" src="https://picsum.photos/900/800" />
-                            <img className="img2" src="https://picsum.photos/900/800" />
+                            <img className="img2" src="../imagesCaseStudy/swissTchoukball/_S6A0230.jpg" />
+                            <img className="img2" src="../imagesCaseStudy/swissTchoukball/_S6A3920.jpg" />
+                            <img className="img2" src="../imagesCaseStudy/swissTchoukball/_S6A4014.jpg" />
+                            <img className="img2" src="../imagesCaseStudy/swissTchoukball/_S6A3907.jpg" />
                         </div>
                     </section>
 
