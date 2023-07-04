@@ -39,8 +39,8 @@ class SwissTchoukball extends React.Component {
                     <section className="cahierCharge">
                         <p className="black specifications">Je devais réaliser un logo, un design de voile de planche à voile, d'un snow ainsi qu'une affiche pour l'annonce d'un concert au pieds des pistes. La voile et le snow ne devait pas nécessairement respecter l'identité graphique de la marque mais il fallait par contre prendre en compte les spécificités techniques de ses sports.</p>
                         <div className="scrollWrapper">
-                            <img class="img2" src="https://picsum.photos/900/800" />
-                            <img class="img2" src="https://picsum.photos/900/800" />
+                            <img className="img2" src="https://picsum.photos/900/800" />
+                            <img className="img2" src="https://picsum.photos/900/800" />
                         </div>
                     </section>
 

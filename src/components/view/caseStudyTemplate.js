@@ -45,8 +45,8 @@ class Adrenaline extends React.Component {
                         <p className="black specifications">Description du cahier des charges</p>
                         <div className="scrollWrapper">
                             {/* mettre image dans l'animation scroll     ↓        */}
-                            <img class="img2" src="https://picsum.photos/900/800" />
-                            <img class="img2" src="https://picsum.photos/900/800" />
+                            <img className="img2" src="https://picsum.photos/900/800" />
+                            <img className="img2" src="https://picsum.photos/900/800" />
                         </div>
                     </section>
 
