@@ -18,7 +18,8 @@ class Adrenaline extends React.Component {
         const controller = new ScrollMagic.Controller();
     
         new ScrollMagic.Scene({
-          duration: '200%',
+            //Changer le duration selon le nombre d'image: 100% si 2 images, 200% si 3 images, etc
+          duration: '100%',
           triggerElement: '.specifications',
           triggerHook: 0.4,
         })
@@ -30,16 +31,20 @@ class Adrenaline extends React.Component {
         return(
             <>
             <main className="projet">
-                <SubmenuCaseStudy info="Adrenaline | Graphisme | 2022"/>
+                {/* a remplir              ↓         ↓        ↓*/}
+                <SubmenuCaseStudy info="Projet | Services | année"/>
                 <section className="gridContainer">
                     <section className="mandat">
+                        {/* mettre image de garde  ↓ */}
                         <img src="https://picsum.photos/900/800" />
-                        <p className="black description">Dans le cadre d'un projet scolaire, il m'a été demandé de créer un logo et d'autres supports de communication pour une marque nommée Adrenaline active dans le domaine des sports de glisse été comme hiver.</p>
+                        {/* a remplir                           ↓        */}
+                        <p className="black description">Description du projet</p>
                     </section>
                     <section className="cahierCharge">
-                        <p className="black specifications">Je devais réaliser un logo, un design de voile de planche à voile, d'un snow ainsi qu'une affiche pour l'annonce d'un concert au pieds des pistes. La voile et le snow ne devait pas nécessairement respecter l'identité graphique de la marque mais il fallait par contre prendre en compte les spécificités techniques de ses sports.</p>
+                        {/* a remplir                           ↓        */}
+                        <p className="black specifications">Description du cahier des charges</p>
                         <div className="scrollWrapper">
-                            <img class="img2" src="https://picsum.photos/900/800" />
+                            {/* mettre image dans l'animation scroll     ↓        */}
                             <img class="img2" src="https://picsum.photos/900/800" />
                             <img class="img2" src="https://picsum.photos/900/800" />
                         </div>

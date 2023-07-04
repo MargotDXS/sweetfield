@@ -27,7 +27,7 @@ class CaseStudies extends React.Component {
                 <CsTitle />
                 <CaseStudiesLine projectName="Adrenaline" projectService="Graphisme" projectYear="2022" destinationPage="/caseStudies/adrenaline" />
                 <CaseStudiesLine projectName="A l'écoute de l'intime" projectService="Graphisme" projectYear="2022 - xx" destinationPage="" />
-                <CaseStudiesLine projectName="Swiss Tchoukball" projectService="Photographie" projectYear="2021 - xx" destinationPage="" />
+                <CaseStudiesLine projectName="Swiss Tchoukball" projectService="Photographie" projectYear="2021 - xx" destinationPage="/caseStudies/swissTchoukball" />
                 <Cbutton btnType="primary" value="Je veux discuter avec toi" destinationPage="/contact"/>
             </main>
             <div className="bg">

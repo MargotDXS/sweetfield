@@ -5,7 +5,7 @@ import SubmenuCaseStudy from "../../moleculs/submenuCaseStudy";
 import Cbutton from "../../atoms/Cbutton";
 import ScrollMagic from 'scrollmagic';
 
-class Adrenaline extends React.Component {
+class SwissTchoukball extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -18,7 +18,7 @@ class Adrenaline extends React.Component {
         const controller = new ScrollMagic.Controller();
     
         new ScrollMagic.Scene({
-          duration: '200%',
+          duration: '100%',
           triggerElement: '.specifications',
           triggerHook: 0.4,
         })
@@ -30,7 +30,7 @@ class Adrenaline extends React.Component {
         return(
             <>
             <main className="projet">
-                <SubmenuCaseStudy info="Adrenaline | Graphisme | 2022"/>
+                <SubmenuCaseStudy info="Swiss Tchoukball | Photographie | 2021 - xx"/>
                 <section className="gridContainer">
                     <section className="mandat">
                         <img src="https://picsum.photos/900/800" />
@@ -39,7 +39,6 @@ class Adrenaline extends React.Component {
                     <section className="cahierCharge">
                         <p className="black specifications">Je devais réaliser un logo, un design de voile de planche à voile, d'un snow ainsi qu'une affiche pour l'annonce d'un concert au pieds des pistes. La voile et le snow ne devait pas nécessairement respecter l'identité graphique de la marque mais il fallait par contre prendre en compte les spécificités techniques de ses sports.</p>
                         <div className="scrollWrapper">
-                            <img class="img2" src="https://picsum.photos/900/800" />
                             <img class="img2" src="https://picsum.photos/900/800" />
                             <img class="img2" src="https://picsum.photos/900/800" />
                         </div>
@@ -58,4 +57,4 @@ class Adrenaline extends React.Component {
     }
 }
 
-export default Adrenaline;
+export default SwissTchoukball;
