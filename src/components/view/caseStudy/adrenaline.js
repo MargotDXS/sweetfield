@@ -34,7 +34,7 @@ class Adrenaline extends React.Component {
                 <SubmenuCaseStudy info="Adrenaline | Graphisme | 2022"/>
                 <section className="gridContainer">
                     <section className="mandat">
-                        <img src="https://picsum.photos/900/800" />
+                        <img src="../imagesCaseStudy/adrenaline/main.png" />
                         <p className="black description">Dans le cadre d'un projet scolaire, il m'a été demandé de créer un logo et d'autres supports de communication pour une marque nommée Adrenaline active dans le domaine des sports de glisse été comme hiver.</p>
                     </section>
                     <section className="cahierCharge">

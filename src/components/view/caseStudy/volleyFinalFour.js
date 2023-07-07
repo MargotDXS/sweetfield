@@ -1,0 +1,67 @@
+import React from "react";
+import '../caseStudyTemplate.scss';
+import Cfooter from "../../parts/Cfooter";
+import SubmenuCaseStudy from "../../moleculs/submenuCaseStudy";
+import Cbutton from "../../atoms/Cbutton";
+import ScrollMagic from 'scrollmagic';
+
+class VolleyFinalFour extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    componentDidMount() {
+        window.scrollTo({ top: 0, left: 0 });
+        this.splitScroll();
+    }
+    
+    splitScroll() {
+        const controller = new ScrollMagic.Controller();
+    
+        new ScrollMagic.Scene({
+            //Changer le duration selon le nombre d'image: 100% si 2 images, 200% si 3 images, etc
+          duration: '100%',
+          triggerElement: '.specifications',
+          triggerHook: 0.4,
+        })
+        .setPin('.specifications')
+        .addTo(controller);
+    }
+
+    render() {
+        return(
+            <>
+            <main className="projet">
+                <SubmenuCaseStudy info="Swiss Volley Final Four | Photographie | 2022 - 2023"/>
+                <section className="gridContainer">
+                    <section className="mandat">
+                        {/* mettre image de garde  ↓ */}
+                        <img src="https://picsum.photos/900/800" />
+                        {/* a remplir                           ↓        */}
+                        <p className="black description">Description du projet</p>
+                    </section>
+                    <section className="cahierCharge">
+                        {/* a remplir                           ↓        */}
+                        <p className="black specifications">Description du cahier des charges</p>
+                        <div className="scrollWrapper">
+                            {/* mettre image dans l'animation scroll     ↓        */}
+                            <img className="img2" src="../imagesCaseStudy/volleyFinalFour/_S6A6579.jpg" />
+                            <img className="img2" src="../imagesCaseStudy/volleyFinalFour/_S6A6659.jpg" />
+                            <img className="img2" src="../imagesCaseStudy/volleyFinalFour/_S6A7086.jpg" />
+                        </div>
+                    </section>
+
+                    <Cbutton destinationPage="/contact" value="Je veux discuter avec toi" btnType="primary"/>
+                </section>
+            </main>
+
+            <div className="bg">
+                <div className="grainyBg whiteBlended"></div>
+            </div>
+            <Cfooter />
+            </>
+        )
+    }
+}
+
+export default VolleyFinalFour;
