@@ -1,0 +1,33 @@
+.service {
+    grid-column: 1 / span 16;
+    padding-top: 15vh;
+    height: 120vh;
+    display: flex;
+    position: relative;
+    .left, .right {
+        width: 50%;
+        height: 100vh;
+        p {
+            margin-bottom: 5vh;
+        }
+    }
+    .imageService1, .imageService2, .imageService3 {
+        overflow: clip;
+        position: absolute;
+        img {
+            height: 80vh;
+            width: 87.5%;
+            object-fit: cover;
+            margin-left: 12.5%;
+        }
+    }
+    .img3 {
+        z-index: 1;
+    }
+    .img2 {
+        z-index: 2;
+    }
+    .img1 {
+        z-index: 3;
+    }
+}

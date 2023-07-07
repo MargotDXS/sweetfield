@@ -6,7 +6,7 @@ import Cbackground from "../atoms/background";
 import HeroHeader from "../moleculs/HeroHeader";
 
 import Cbutton from "../atoms/Cbutton";
-import Service from "../atoms/service";
+import Service from "../moleculs/service";
 
 class Homepage extends React.Component {
     constructor(props) {
